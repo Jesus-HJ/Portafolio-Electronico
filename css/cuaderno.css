@@ -1,44 +1,50 @@
 .cuaderno-wrapper {
-  max-width: 1150px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 40px 50px 100px;
+  padding: 50px 60px 100px;
 }
 
 .cuaderno-title {
   font-size: 2.4rem;
   font-weight: 800;
   color: var(--text);
+  margin: 0;
 }
 
 .cuaderno-subtitle {
   color: var(--text-muted);
-  margin-bottom: 36px;
+  margin: 8px 0 36px;
 }
 
 .semanas-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
+  margin-bottom: 35px;
 }
 
 .semana-card {
   background: var(--card-bg);
   border: 1px solid var(--border);
   border-radius: 14px;
-  padding: 20px;
+  padding: 24px;
   cursor: pointer;
   transition:
     transform 0.2s ease,
-    border-color 0.2s ease;
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .semana-card:hover {
   transform: translateY(-4px);
   border-color: var(--accent);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .semana-card h3 {
   color: var(--text);
+  margin: 0 0 10px;
+  font-size: 1.3rem;
 }
 
 .semana-card .fecha {
@@ -49,10 +55,137 @@
 
 .semana-card p {
   color: var(--text-muted);
+  line-height: 1.5;
+  margin: 0;
 }
 
 .oculto {
-  display: none;
+  display: none !important;
+}
+
+.detalle {
+  margin-top: 20px;
+}
+
+#volver {
+  background: transparent;
+  border: 1px solid var(--border-soft);
+  color: var(--text);
+  padding: 9px 17px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 25px;
+  font-family: inherit;
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+#volver:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(-2px);
+}
+
+#detalle-titulo {
+  color: var(--text);
+  font-size: 2rem;
+  margin: 0 0 8px;
+}
+
+#detalle-fecha {
+  color: var(--accent);
+  margin-bottom: 25px;
+}
+
+#detalle-contenido {
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.semana-contenido {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 50px;
+  margin-top: 30px;
+  align-items: start;
+}
+
+.columna-teoria {
+  min-width: 0;
+  padding-right: 35px;
+  border-right: 1px solid var(--border);
+}
+
+.columna-practica {
+  min-width: 0;
+  padding-left: 5px;
+}
+
+.columna-teoria h3,
+.columna-practica h3 {
+  color: var(--text);
+  font-size: 1.5rem;
+  margin: 0 0 25px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.columna-teoria h4 {
+  color: var(--text);
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.columna-teoria p,
+.columna-teoria li,
+.columna-practica p {
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.columna-teoria p {
+  margin-bottom: 15px;
+}
+
+.columna-teoria ul {
+  padding-left: 25px;
+  margin-bottom: 20px;
+}
+
+.columna-teoria li {
+  margin-bottom: 8px;
+}
+
+.columna-teoria strong {
+  color: var(--text);
+}
+
+.imagenes-practica {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.imagen-recuadro {
+  width: 100%;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.imagen-recuadro img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .galeria {
@@ -68,35 +201,6 @@
   object-fit: cover;
 }
 
-#volver {
-  background: transparent;
-  border: 1px solid var(--border-soft);
-  color: var(--text);
-  padding: 8px 16px;
-  border-radius: 8px;
-  cursor: pointer;
-  margin-bottom: 20px;
-  font-family: inherit;
-}
-
-#volver:hover {
-  border-color: var(--accent);
-  color: var(--accent);
-}
-
-#detalle-titulo {
-  color: var(--text);
-}
-
-#detalle-fecha {
-  color: var(--accent);
-  margin-bottom: 16px;
-}
-
-#detalle-contenido {
-  color: var(--text-muted);
-  line-height: 1.7;
-}
 .btn-volver-inicio {
   display: inline-block;
   background: transparent;
@@ -117,4 +221,58 @@
   border-color: var(--accent);
   color: var(--accent);
   transform: translateY(-2px);
+}
+
+@media (max-width: 1000px) {
+  .cuaderno-wrapper {
+    padding: 45px 45px 90px;
+  }
+
+  .semanas-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .semana-contenido {
+    gap: 35px;
+  }
+}
+
+@media (max-width: 750px) {
+  .cuaderno-wrapper {
+    padding: 35px 30px 70px;
+  }
+
+  .semanas-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .semana-contenido {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .columna-teoria {
+    padding-right: 0;
+    padding-bottom: 30px;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .columna-practica {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .cuaderno-wrapper {
+    padding: 30px 20px 60px;
+  }
+
+  .cuaderno-title {
+    font-size: 2rem;
+  }
+
+  #detalle-titulo {
+    font-size: 1.7rem;
+  }
 }
