@@ -144,32 +144,180 @@ const semanas = [
       </div>
     `,
 
-    imagenes: []
+    imagenes: [],
   },
 
   {
     id: 2,
     titulo: "Semana 2",
-    fecha: "----",
-    resumen: "---",
+    fecha: "Semana 2",
+    resumen:
+      "HTML, XML, DOM, SEO, CSS3, Flexbox, Grid Layout y diseño responsivo.",
 
     contenido: `
-      <div class="semana-contenido">
+    <div class="semana-contenido">
 
-        <div class="columna-teoria">
-          <h3>Teoría</h3>
-          <p>Contenido pendiente de la Semana 2.</p>
-        </div>
+      <div class="columna-teoria">
 
-        <div class="columna-practica">
-          <h3>Práctica</h3>
-          <p>Contenido pendiente de la Semana 2.</p>
+        <h3>Teoría</h3>
+
+        <h4>HTML y XML</h4>
+
+        <p>
+          Se estudió la construcción de páginas web utilizando HTML y XML,
+          revisando su estructura, elementos, etiquetas y atributos.
+        </p>
+
+        <h4>Estándar Open Web Platform</h4>
+
+        <p>
+          Se revisaron los estándares y tecnologías abiertas utilizados
+          para desarrollar páginas y aplicaciones web compatibles.
+        </p>
+
+        <h4>HTML5 y estructura web</h4>
+
+        <p>
+          Se estudiaron las principales etiquetas de HTML5, como
+          header, nav, main, section, article, footer, h1, p, a e img,
+          utilizadas para organizar el contenido de una página.
+        </p>
+
+        <h4>Árbol DOM y renderizado</h4>
+
+        <p>
+          Se estudió el DOM como un árbol de nodos que representa la
+          estructura de un documento HTML y permite al navegador procesar
+          y renderizar sus elementos.
+        </p>
+
+        <h4>Ciclo de vida y SEO</h4>
+
+        <p>
+          Se revisó el ciclo de vida de una página web y conceptos básicos
+          de SEO para mejorar su estructura, contenido y visibilidad en
+          los motores de búsqueda.
+        </p>
+
+        <h4>Compatibilidad entre navegadores</h4>
+
+        <p>
+          Se analizó la importancia de utilizar estándares web para lograr
+          un funcionamiento adecuado en diferentes navegadores.
+        </p>
+
+        <h4>CSS3</h4>
+
+        <p>
+          Se estudió CSS3, su sintaxis y los modelos de visualización
+          block, inline e inline-block, además de unidades absolutas y
+          relativas como px, %, em, rem, vw y vh.
+        </p>
+
+        <h4>Flexbox y Grid Layout</h4>
+
+        <p>
+          Se estudiaron Flexbox y Grid Layout para organizar elementos
+          mediante filas, columnas, alineación y distribución de espacios.
+        </p>
+
+        <h4>Position, diseño fluido y responsivo</h4>
+
+        <p>
+          Se revisaron los valores static, relative, absolute, fixed y
+          sticky de position, además del diseño fluido y responsivo para
+          adaptar las páginas a diferentes tamaños de pantalla.
+        </p>
+
+        <h4>Laboratorio</h4>
+
+        <p>
+          Se aplicaron los conceptos de Flexbox, diseño fluido y diseño
+          responsivo en la construcción de una página web.
+        </p>
+
+        <div class="imagenes-practica">
+
+          <div class="imagen-recuadro">
+            <img
+              src="img/semana2_5.png"
+              alt="Evidencia de teoría Semana 2"
+            >
+          </div>
+
+          <div class="imagen-recuadro">
+            <img
+              src="img/semana2_2.png"
+              alt="Evidencia de teoría Semana 2"
+            >
+          </div>
+
+          <div class="imagen-recuadro">
+            <img
+              src="img/semana2_3.png"
+              alt="Evidencia de teoría Semana 2"
+            >
+          </div>
+          
+    
+          <div class="imagen-recuadro">
+            <img
+              src="img/semana2_4.png"
+              alt="Evidencia de teoría Semana 2"
+            >
+          </div>
+
         </div>
 
       </div>
-    `,
 
-    imagenes: []
+      <div class="columna-practica">
+
+        <h3>Práctica</h3>
+
+        <p>
+          Evidencias de los trabajos y actividades realizadas durante
+          la Semana 2.
+        </p>
+
+        <div class="imagenes-practica">
+
+          <div class="imagen-recuadro">
+            <img
+              src="img/semana2_6.png"
+              alt="Evidencia de práctica 1 Semana 2"
+            >
+          </div>
+
+          <div class="imagen-recuadro">
+            <img
+              src="img/semana2_7.png"
+              alt="Evidencia de práctica 2 Semana 2"
+            >
+          </div>
+
+          <div class="imagen-recuadro">
+            <img
+              src="img/semana2_8.png"
+              alt="Evidencia de práctica 3 Semana 2"
+            >
+          </div>
+
+          <div class="imagen-recuadro">
+            <img
+              src="img/semana2_9.png"
+              alt="Evidencia de práctica 4 Semana 2"
+            >
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  `,
+
+    imagenes: [],
   },
 
   {
@@ -194,8 +342,8 @@ const semanas = [
       </div>
     `,
 
-    imagenes: []
-  }
+    imagenes: [],
+  },
 ];
 
 const grid = document.getElementById("lista-semanas");
@@ -226,29 +374,22 @@ function mostrarSemana(id) {
     return;
   }
 
-  document.getElementById("detalle-titulo").textContent =
-    semana.titulo;
+  document.getElementById("detalle-titulo").textContent = semana.titulo;
 
-  document.getElementById("detalle-fecha").textContent =
-    semana.fecha;
+  document.getElementById("detalle-fecha").textContent = semana.fecha;
 
-  document.getElementById("detalle-contenido").innerHTML =
-    semana.contenido;
+  document.getElementById("detalle-contenido").innerHTML = semana.contenido;
 
-  document.getElementById("detalle-imagenes").innerHTML =
-    semana.imagenes
-      .map(
-        (src) =>
-          `<img src="${src}" alt="${semana.titulo}">`
-      )
-      .join("");
+  document.getElementById("detalle-imagenes").innerHTML = semana.imagenes
+    .map((src) => `<img src="${src}" alt="${semana.titulo}">`)
+    .join("");
 
   grid.classList.add("oculto");
   detalle.classList.remove("oculto");
 
   window.scrollTo({
     top: 0,
-    behavior: "smooth"
+    behavior: "smooth",
   });
 }
 
@@ -258,6 +399,6 @@ document.getElementById("volver").addEventListener("click", () => {
 
   window.scrollTo({
     top: 0,
-    behavior: "smooth"
+    behavior: "smooth",
   });
 });
