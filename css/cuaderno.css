@@ -1,7 +1,7 @@
 .cuaderno-wrapper {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 50px 60px 100px;
+  padding: 50px 35px 100px;
 }
 
 .cuaderno-title {
@@ -107,14 +107,14 @@
 .semana-contenido {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  gap: 50px;
+  gap: 35px;
   margin-top: 30px;
   align-items: start;
 }
 
 .columna-teoria {
   min-width: 0;
-  padding-right: 35px;
+  padding-right: 25px;
   border-right: 1px solid var(--border);
 }
 

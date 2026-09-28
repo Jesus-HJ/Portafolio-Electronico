@@ -319,32 +319,122 @@ const semanas = [
 
     imagenes: [],
   },
+    {
+  id: 3,
+  titulo: "Semana 3",
+  fecha: "Semana 3",
+  resumen: "Desarrollo Front-End con Bootstrap y Tailwind CSS.",
 
-  {
-    id: 3,
-    titulo: "Semana 3",
-    fecha: "----",
-    resumen: "---",
+  contenido: `
+    <div class="semana-contenido">
 
-    contenido: `
-      <div class="semana-contenido">
+      <div class="columna-teoria">
 
-        <div class="columna-teoria">
-          <h3>Teoría</h3>
-          <p>Contenido pendiente de la Semana 3.</p>
-        </div>
+        <h3>Teoría</h3>
 
-        <div class="columna-practica">
-          <h3>Práctica</h3>
-          <p>Contenido pendiente de la Semana 3.</p>
+        <p>
+          Desarrollo de páginas web Front-End utilizando Bootstrap y Tailwind CSS.
+        </p>
+
+        <p>
+          Se estudiaron Layout, Components, Tipografía, Backgrounds, Borders,
+          Effects y Spacing.
+        </p>
+
+        <p>
+          También se trabajó con Container, Columns, Display, Position y Flexbox.
+        </p>
+
+        <p>
+          Se revisaron componentes como Buttons, Badges, Dropdowns, Avatars,
+          Forms y Navigation.
+        </p>
+
+        <div class="imagenes-practica">
+
+          <div class="imagen-recuadro">
+            <img
+              src="img/semana3_1.png"
+              alt="Evidencia de teoría Semana 3 - 1"
+            >
+          </div>
+
+          <div class="imagen-recuadro">
+            <img
+              src="img/semana3_2.png"
+              alt="Evidencia de teoría Semana 3 - 2"
+            >
+          </div>
+
+          <div class="imagen-recuadro">
+            <img
+              src="img/semana3_3.png"
+              alt="Evidencia de teoría Semana 3 - 3"
+            >
+          </div>
+
         </div>
 
       </div>
-    `,
 
-    imagenes: [],
-  },
+      <div class="columna-practica">
+
+        <h3>Práctica</h3>
+
+        <p>
+          Desarrollo de páginas web utilizando Bootstrap y Tailwind CSS.
+        </p>
+
+        <p>
+          Aplicación de Layout, Flexbox y diferentes componentes de interfaz.
+        </p>
+
+        <p>
+          Práctica Calificada 03: Desarrollo de un sitio web con CSS.
+        </p>
+
+        <div class="imagenes-practica">
+
+          <div class="imagen-recuadro">
+            <img
+              src="img/semana3_4.png"
+              alt="Evidencia de práctica Semana 3 - 1"
+            >
+          </div>
+
+          <div class="imagen-recuadro">
+            <img
+              src="img/semana3_5.png"
+              alt="Evidencia de práctica Semana 3 - 2"
+            >
+          </div>
+
+          <div class="imagen-recuadro">
+            <img
+              src="img/semana3_6.png"
+              alt="Evidencia de práctica Semana 3 - 3"
+            >
+          </div>
+
+          <div class="imagen-recuadro">
+            <img
+              src="img/semana3_7.png"
+              alt="Evidencia de práctica Semana 3 - 4"
+            >
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  `,
+
+  imagenes: []
+},
 ];
+  
+
 
 const grid = document.getElementById("lista-semanas");
 const detalle = document.getElementById("detalle-semana");
