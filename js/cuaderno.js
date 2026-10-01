@@ -319,13 +319,14 @@ const semanas = [
 
     imagenes: [],
   },
-    {
-  id: 3,
-  titulo: "Semana 3",
-  fecha: "Semana 3",
-  resumen: "Desarrollo Front-End con Bootstrap y Tailwind CSS.",
 
-  contenido: `
+  {
+    id: 3,
+    titulo: "Semana 3",
+    fecha: "Semana 3",
+    resumen: "Desarrollo Front-End con Bootstrap y Tailwind CSS.",
+
+    contenido: `
     <div class="semana-contenido">
 
       <div class="columna-teoria">
@@ -430,11 +431,123 @@ const semanas = [
     </div>
   `,
 
-  imagenes: []
-},
-];
-  
+    imagenes: [],
+  },
 
+{
+    id: 4,
+    titulo: "Semana 4",
+    fecha: "Semana 4",
+    resumen: "Desarrollo Front-End con Bootstrap y Tailwind CSS.",
+
+    contenido: `
+    <div class="semana-contenido">
+
+      <div class="columna-teoria">
+
+        <h3>Teoría</h3>
+
+        <p>
+          Desarrollo de páginas web Front-End utilizando Bootstrap y Tailwind CSS.
+        </p>
+
+        <p>
+          Se estudiaron Layout, Components, Tipografía, Backgrounds, Borders,
+          Effects y Spacing.
+        </p>
+
+        <p>
+          También se trabajó con Container, Columns, Display, Position y Flexbox.
+        </p>
+
+        <p>
+          Se revisaron componentes como Buttons, Badges, Dropdowns, Avatars,
+          Forms y Navigation.
+        </p>
+
+        <div class="imagenes-practica">
+
+          <div class="imagen-recuadro">
+            <img
+              src="img/semana4_1.png"
+              alt="Evidencia de teoría Semana 4 - 1"
+            >
+          </div>
+
+          <div class="imagen-recuadro">
+            <img
+              src="img/semana4_2.png"
+              alt="Evidencia de teoría Semana 4 - 2"
+            >
+          </div>
+
+          <div class="imagen-recuadro">
+            <img
+              src="img/semana4_3.png"
+              alt="Evidencia de teoría Semana 4 - 3"
+            >
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="columna-practica">
+
+        <h3>Práctica</h3>
+
+        <p>
+          Desarrollo de páginas web utilizando Bootstrap y Tailwind CSS.
+        </p>
+
+        <p>
+          Aplicación de Layout, Flexbox y diferentes componentes de interfaz.
+        </p>
+
+        <p>
+          Práctica Calificada 03: Desarrollo de un sitio web con CSS.
+        </p>
+
+        <div class="imagenes-practica">
+
+          <div class="imagen-recuadro">
+            <img
+              src="img/semana4_4.png"
+              alt="Evidencia de práctica Semana 4 - 1"
+            >
+          </div>
+
+          <div class="imagen-recuadro">
+            <img
+              src="img/semana4_5.png"
+              alt="Evidencia de práctica Semana 4 - 2"
+            >
+          </div>
+
+          <div class="imagen-recuadro">
+            <img
+              src="img/semana4_6.png"
+              alt="Evidencia de práctica Semana 4 - 3"
+            >
+          </div>
+
+          <div class="imagen-recuadro">
+            <img
+              src="img/semana4_7.png"
+              alt="Evidencia de práctica Semana 4 - 4"
+            >
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  `,
+
+    imagenes: [],
+  },
+];
 
 const grid = document.getElementById("lista-semanas");
 const detalle = document.getElementById("detalle-semana");
@@ -476,6 +589,7 @@ function mostrarSemana(id) {
 
   grid.classList.add("oculto");
   detalle.classList.remove("oculto");
+  document.dispatchEvent(new Event('semanaMostrada'));
 
   window.scrollTo({
     top: 0,
