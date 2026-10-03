@@ -123,44 +123,40 @@
   padding-left: 5px;
 }
 
-.columna-teoria h3,
-.columna-practica h3 {
-  color: var(--text);
-  font-size: 1.5rem;
-  margin: 0 0 25px;
-  padding-bottom: 12px;
-  border-bottom: 1px solid var(--border);
-}
-
-.columna-teoria h4 {
-  color: var(--text);
-  margin-top: 25px;
-  margin-bottom: 10px;
-  font-size: 1rem;
-}
-
-.columna-teoria p,
-.columna-teoria li,
-.columna-practica p {
-  color: var(--text-muted);
-  line-height: 1.7;
-}
-
-.columna-teoria p {
-  margin-bottom: 15px;
-}
-
-.columna-teoria ul {
-  padding-left: 25px;
+.columna-teoria h4,
+.columna-practica h4 {
+  margin-top: 40px;
   margin-bottom: 20px;
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 
-.columna-teoria li {
-  margin-bottom: 8px;
+.tabla-conceptos {
+  width: 100%;
+  margin: 0 0 20px 0;
+  overflow-x: auto;
 }
 
-.columna-teoria strong {
-  color: var(--text);
+.tabla-conceptos table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.tabla-conceptos th,
+.tabla-conceptos td {
+  border: 1px solid #cbd5e1;
+  padding: 10px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.tabla-conceptos th {
+  font-weight: 700;
+}
+
+.tabla-conceptos tr:nth-child(even) {
+  background: rgba(128, 128, 128, 0.08);
 }
 
 .imagenes-practica {

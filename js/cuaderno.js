@@ -434,120 +434,266 @@ const semanas = [
     imagenes: [],
   },
 
-{
-    id: 4,
-    titulo: "Semana 4",
-    fecha: "Semana 4",
-    resumen: "Desarrollo Front-End con Bootstrap y Tailwind CSS.",
+  {
+  id: 4,
+  titulo: "Semana 4",
+  fecha: "Semana 4",
+  resumen:
+    "JavaScript moderno, manipulación del DOM, Canvas API y animaciones.",
 
-    contenido: `
-    <div class="semana-contenido">
+  contenido: `
+  <div class="semana-contenido">
 
-      <div class="columna-teoria">
+    <div class="columna-teoria">
 
-        <h3>Teoría</h3>
+      <h3>Teoría</h3>
 
-        <p>
-          Desarrollo de páginas web Front-End utilizando Bootstrap y Tailwind CSS.
-        </p>
+      <p>
+        Desarrollo Front-End con JavaScript y TypeScript, trabajando variables,
+        tipos de datos, operadores, estructuras de control y bucles.
+      </p>
 
-        <p>
-          Se estudiaron Layout, Components, Tipografía, Backgrounds, Borders,
-          Effects y Spacing.
-        </p>
+      <p>
+        Se estudiaron funciones, funciones anónimas, funciones flecha, IIFE y
+        closures.
+      </p>
 
-        <p>
-          También se trabajó con Container, Columns, Display, Position y Flexbox.
-        </p>
+      <p>
+        También se revisó la manipulación del DOM y el uso de Canvas para crear
+        animaciones y gráficos con JavaScript.
+      </p>
 
-        <p>
-          Se revisaron componentes como Buttons, Badges, Dropdowns, Avatars,
-          Forms y Navigation.
-        </p>
+      <h4>Cuadro de conceptos principales</h4>
 
-        <div class="imagenes-practica">
+      <div class="tabla-conceptos">
 
-          <div class="imagen-recuadro">
-            <img
-              src="img/semana4_1.png"
-              alt="Evidencia de teoría Semana 4 - 1"
-            >
-          </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Concepto</th>
+              <th>Descripción</th>
+            </tr>
+          </thead>
 
-          <div class="imagen-recuadro">
-            <img
-              src="img/semana4_2.png"
-              alt="Evidencia de teoría Semana 4 - 2"
-            >
-          </div>
+          <tbody>
+            <tr>
+              <td>JavaScript / TypeScript</td>
+              <td>Desarrollo de aplicaciones Front-End.</td>
+            </tr>
 
-          <div class="imagen-recuadro">
-            <img
-              src="img/semana4_3.png"
-              alt="Evidencia de teoría Semana 4 - 3"
-            >
-          </div>
+            <tr>
+              <td>Variables y tipos</td>
+              <td>Uso de variables, números, strings, objetos y booleanos.</td>
+            </tr>
 
-        </div>
+            <tr>
+              <td>Estructuras de control</td>
+              <td>Uso de condiciones y bucles.</td>
+            </tr>
+
+            <tr>
+              <td>Funciones</td>
+              <td>Funciones anónimas, flecha, IIFE y closures.</td>
+            </tr>
+
+            <tr>
+              <td>DOM</td>
+              <td>Manipulación de elementos y estilos con JavaScript.</td>
+            </tr>
+
+            <tr>
+              <td>Canvas</td>
+              <td>Creación de gráficos y animaciones.</td>
+            </tr>
+          </tbody>
+        </table>
 
       </div>
 
-      <div class="columna-practica">
+    </div>
 
-        <h3>Práctica</h3>
 
-        <p>
-          Desarrollo de páginas web utilizando Bootstrap y Tailwind CSS.
-        </p>
+    <div class="columna-practica">
 
-        <p>
-          Aplicación de Layout, Flexbox y diferentes componentes de interfaz.
-        </p>
+      <h3>Práctica</h3>
 
-        <p>
-          Práctica Calificada 03: Desarrollo de un sitio web con CSS.
-        </p>
+      <p>
+        Se desarrolló una aplicación web con JavaScript/TypeScript,
+        utilizando manipulación del DOM y funciones avanzadas.
+      </p>
 
-        <div class="imagenes-practica">
+      <p>
+        Se implementaron IIFE, closures, funciones flecha,
+        Canvas API y requestAnimationFrame.
+      </p>
 
-          <div class="imagen-recuadro">
-            <img
-              src="img/semana4_4.png"
-              alt="Evidencia de práctica Semana 4 - 1"
-            >
-          </div>
+      <p>
+        También se aplicaron técnicas de depuración y optimización
+        mediante las herramientas DevTools del navegador.
+      </p>
 
-          <div class="imagen-recuadro">
-            <img
-              src="img/semana4_5.png"
-              alt="Evidencia de práctica Semana 4 - 2"
-            >
-          </div>
+      <h4>Cuadro de conceptos principales</h4>
 
-          <div class="imagen-recuadro">
-            <img
-              src="img/semana4_6.png"
-              alt="Evidencia de práctica Semana 4 - 3"
-            >
-          </div>
+      <div class="tabla-conceptos">
 
-          <div class="imagen-recuadro">
-            <img
-              src="img/semana4_7.png"
-              alt="Evidencia de práctica Semana 4 - 4"
-            >
-          </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Concepto</th>
+              <th>Descripción</th>
+            </tr>
+          </thead>
 
+          <tbody>
+            <tr>
+              <td>DOM</td>
+              <td>Manipulación de elementos HTML.</td>
+            </tr>
+
+            <tr>
+              <td>Closures</td>
+              <td>Gestión del estado de la animación.</td>
+            </tr>
+
+            <tr>
+              <td>Canvas</td>
+              <td>Dibujo y creación de animaciones.</td>
+            </tr>
+
+            <tr>
+              <td>requestAnimationFrame</td>
+              <td>Control del ciclo de animación.</td>
+            </tr>
+
+            <tr>
+              <td>DevTools</td>
+              <td>Depuración y análisis del rendimiento.</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+
+      <div class="imagenes-practica">
+
+        <div class="imagen-recuadro">
+          <img
+            src="img/semana4_4.png"
+            alt="Evidencia de práctica Semana 4 - 1"
+          >
+        </div>
+
+        <div class="imagen-recuadro">
+          <img
+            src="img/semana4_5.png"
+            alt="Evidencia de práctica Semana 4 - 2"
+          >
+        </div>
+
+        <div class="imagen-recuadro">
+          <img
+            src="img/semana4_6.png"
+            alt="Evidencia de práctica Semana 4 - 3"
+          >
+        </div>
+
+        <div class="imagen-recuadro">
+          <img
+            src="img/semana4_7.png"
+            alt="Evidencia de práctica Semana 4 - 4"
+          >
         </div>
 
       </div>
 
     </div>
-  `,
 
-    imagenes: [],
-  },
-];
+  </div>
+`,
+
+  imagenes: [],
+},
+
+{
+  id: 5,
+  titulo: "Semana 5",
+  fecha: "Semana 5",
+  resumen: "Resumen breve de los temas trabajados en la Semana 5.",
+
+  contenido: `
+  <div class="semana-contenido">
+
+    <div class="columna-teoria">
+
+      <h3>Teoría</h3>
+
+      <p>
+        Resumen breve de los temas estudiados durante la Semana 5.
+      </p>
+
+      <p>
+        Segundo resumen de los principales contenidos desarrollados.
+      </p>
+
+      <div class="imagenes-practica">
+
+        <div class="imagen-recuadro">
+          <img
+            src="img/semana5_1.png"
+            alt="Evidencia de teoría Semana 5 - 1"
+          >
+        </div>
+
+        <div class="imagen-recuadro">
+          <img
+            src="img/semana5_2.png"
+            alt="Evidencia de teoría Semana 5 - 2"
+          >
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="columna-practica">
+
+      <h3>Práctica</h3>
+
+      <p>
+        Resumen breve de la actividad práctica realizada durante la semana.
+      </p>
+
+      <p>
+        Descripción breve de las herramientas y técnicas utilizadas.
+      </p>
+
+      <div class="imagenes-practica">
+
+        <div class="imagen-recuadro">
+          <img
+            src="img/semana5_3.png"
+            alt="Evidencia de práctica Semana 5 - 1"
+          >
+        </div>
+
+        <div class="imagen-recuadro">
+          <img
+            src="img/semana5_4.png"
+            alt="Evidencia de práctica Semana 5 - 2"
+          >
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+`,
+
+  imagenes: [],
+},
+]
 
 const grid = document.getElementById("lista-semanas");
 const detalle = document.getElementById("detalle-semana");
@@ -589,7 +735,7 @@ function mostrarSemana(id) {
 
   grid.classList.add("oculto");
   detalle.classList.remove("oculto");
-  document.dispatchEvent(new Event('semanaMostrada'));
+  document.dispatchEvent(new Event("semanaMostrada"));
 
   window.scrollTo({
     top: 0,
