@@ -1,62 +1,100 @@
 .cuaderno-wrapper {
+  width: 100%;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 50px 35px 100px;
+  padding: 55px 35px 100px;
+  box-sizing: border-box;
 }
 
 .cuaderno-title {
-  font-size: 2.4rem;
-  font-weight: 800;
-  color: var(--text);
   margin: 0;
+  color: var(--text);
+  font-size: clamp(2rem, 4vw, 2.7rem);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
 }
 
 .cuaderno-subtitle {
+  margin: 12px 0 40px;
   color: var(--text-muted);
-  margin: 8px 0 36px;
+  font-size: 1rem;
+  line-height: 1.7;
 }
 
 .semanas-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 24px;
-  margin-bottom: 35px;
+  margin-bottom: 40px;
 }
 
 .semana-card {
+  position: relative;
+  min-width: 0;
+  padding: 26px;
+  overflow: hidden;
   background: var(--card-bg);
   border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 24px;
+  border-radius: 16px;
   cursor: pointer;
+  box-sizing: border-box;
   transition:
-    transform 0.2s ease,
-    border-color 0.2s ease,
-    box-shadow 0.2s ease;
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.semana-card::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--accent);
+  content: "";
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
 }
 
 .semana-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-5px);
   border-color: var(--accent);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.09);
+}
+
+.semana-card:hover::before {
+  transform: scaleX(1);
+}
+
+.semana-card:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
 }
 
 .semana-card h3 {
+  margin: 0 0 12px;
   color: var(--text);
-  margin: 0 0 10px;
-  font-size: 1.3rem;
+  font-size: 1.25rem;
+  font-weight: 750;
+  line-height: 1.4;
 }
 
 .semana-card .fecha {
+  margin: 0 0 14px;
   color: var(--accent);
   font-size: 0.85rem;
-  margin: 6px 0;
+  font-weight: 650;
+  line-height: 1.5;
 }
 
 .semana-card p {
-  color: var(--text-muted);
-  line-height: 1.5;
   margin: 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.75;
+  overflow-wrap: anywhere;
 }
 
 .oculto {
@@ -64,116 +102,239 @@
 }
 
 .detalle {
-  margin-top: 20px;
+  min-width: 0;
+  margin-top: 25px;
+  animation: entrada-detalle 0.35s ease both;
+}
+
+.detalle-semana img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.imagenes-practica img,
+#detalle-imagenes img {
+  width: 100%;
+  object-fit: contain;
+}
+
+@keyframes entrada-detalle {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.semana-contenido pre {
+  background: #171b24;
+  color: #d1fae5;
+  border: 1px solid #374151;
+  border-radius: 10px;
+  padding: 16px;
+  margin: 12px 0 18px;
+  overflow-x: auto;
+  white-space: pre;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.semana-contenido pre code {
+  font-family: Consolas, "Courier New", monospace;
+}
+
+.galeria-practicas {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+.galeria-practicas figure {
+  margin: 0;
+  padding: 12px;
+  border: 1px solid #374151;
+  border-radius: 12px;
+  background: rgba(128, 128, 128, 0.06);
+}
+
+.galeria-practicas img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.galeria-practicas figcaption {
+  margin-top: 8px;
+  text-align: center;
+  font-size: 14px;
 }
 
 #volver {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 30px;
+  padding: 10px 17px;
   background: transparent;
-  border: 1px solid var(--border-soft);
-  color: var(--text);
-  padding: 9px 17px;
-  border-radius: 8px;
-  cursor: pointer;
-  margin-bottom: 25px;
+  border: 1px solid var(--border-soft, #64748b);
+  border-radius: 9px;
+  color: var(--text, #e2e8f0);
   font-family: inherit;
-  transition:
-    border-color 0.2s ease,
-    color 0.2s ease,
-    transform 0.2s ease;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
 }
 
 #volver:hover {
-  border-color: var(--accent);
-  color: var(--accent);
+  color: var(--accent, #2dd4bf);
+  border-color: var(--accent, #2dd4bf);
   transform: translateY(-2px);
 }
 
+#volver:focus-visible {
+  outline: 2px solid var(--accent, #2dd4bf);
+  outline-offset: 4px;
+}
+
 #detalle-titulo {
+  margin: 0 0 10px;
   color: var(--text);
-  font-size: 2rem;
-  margin: 0 0 8px;
+  font-size: clamp(1.7rem, 3vw, 2.2rem);
+  font-weight: 800;
+  line-height: 1.3;
+  overflow-wrap: anywhere;
 }
 
 #detalle-fecha {
+  margin: 0 0 28px;
   color: var(--accent);
-  margin-bottom: 25px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.6;
 }
 
 #detalle-contenido {
+  min-width: 0;
   color: var(--text-muted);
-  line-height: 1.7;
+  font-size: 0.97rem;
+  line-height: 1.85;
+  overflow-wrap: anywhere;
+}
+
+#detalle-contenido h3,
+#detalle-contenido h4 {
+  color: var(--text);
+  line-height: 1.5;
 }
 
 .semana-contenido {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: start;
   gap: 35px;
   margin-top: 30px;
-  align-items: start;
+}
+
+.columna-teoria,
+.columna-practica {
+  min-width: 0;
+  box-sizing: border-box;
 }
 
 .columna-teoria {
   min-width: 0;
   padding-right: 25px;
-  border-right: 1px solid var(--border);
+  border-right: 1px solid var(--border, #cbd5e1);
+  box-sizing: border-box;
 }
 
 .columna-practica {
   min-width: 0;
   padding-left: 5px;
+  box-sizing: border-box;
 }
 
 .columna-teoria h4,
 .columna-practica h4 {
-  margin-top: 40px;
-  margin-bottom: 20px;
+  margin: 30px 0 18px;
+  color: var(--text);
   font-size: 1.2rem;
   font-weight: 700;
+  line-height: 1.5;
 }
 
 .tabla-conceptos {
   width: 100%;
-  margin: 0 0 20px 0;
+  max-width: 100%;
+  margin: 0 0 24px;
   overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  -webkit-overflow-scrolling: touch;
 }
 
 .tabla-conceptos table {
   width: 100%;
   border-collapse: collapse;
   font-size: 0.9rem;
+  line-height: 1.6;
 }
 
 .tabla-conceptos th,
 .tabla-conceptos td {
-  border: 1px solid #cbd5e1;
-  padding: 10px;
+  padding: 12px;
+  border: 1px solid var(--border);
   text-align: left;
   vertical-align: top;
+  overflow-wrap: anywhere;
 }
 
 .tabla-conceptos th {
+  color: var(--text);
   font-weight: 700;
+  background: rgba(128, 128, 128, 0.12);
 }
 
-.tabla-conceptos tr:nth-child(even) {
-  background: rgba(128, 128, 128, 0.08);
+.tabla-conceptos td {
+  color: var(--text-muted);
+}
+
+.tabla-conceptos tbody tr:nth-child(even) {
+  background: rgba(128, 128, 128, 0.06);
 }
 
 .imagenes-practica {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 20px;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 22px;
 }
 
 .imagen-recuadro {
   width: 100%;
+  min-width: 0;
+  overflow: hidden;
   background: var(--card-bg);
   border: 1px solid var(--border);
-  border-radius: 8px;
-  overflow: hidden;
+  border-radius: 12px;
   box-sizing: border-box;
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.imagen-recuadro:hover {
+  border-color: var(--accent);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
 }
 
 .imagen-recuadro img {
@@ -186,70 +347,134 @@
 
 .galeria {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 16px;
-  margin-top: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+  align-items: start;
+  gap: 20px;
+  margin-top: 28px;
 }
 
 .galeria img {
+  display: block;
   width: 100%;
-  border-radius: 10px;
-  object-fit: cover;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-sizing: border-box;
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.galeria img:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
 }
 
 .btn-volver-inicio {
-  display: inline-block;
-  background: transparent;
-  border: 1px solid var(--border-soft);
-  color: var(--text);
-  padding: 8px 16px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   margin-bottom: 24px;
-  transition:
-    border-color 0.2s ease,
-    color 0.2s ease,
-    transform 0.2s ease;
+  padding: 9px 16px;
+  background: transparent;
+  border: 1px solid var(--border-soft, #64748b);
+  border-radius: 9px;
+  color: var(--text, #e2e8f0);
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
 
 .btn-volver-inicio:hover {
-  border-color: var(--accent);
-  color: var(--accent);
+  color: var(--accent, #2dd4bf);
+  border-color: var(--accent, #2dd4bf);
   transform: translateY(-2px);
+}
+
+.btn-volver-inicio:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+@media (min-width: 1500px) {
+  .cuaderno-wrapper {
+    padding-right: 45px;
+    padding-left: 45px;
+  }
+
+  .semanas-grid {
+    gap: 28px;
+  }
 }
 
 @media (max-width: 1000px) {
   .cuaderno-wrapper {
-    padding: 45px 45px 90px;
+    padding: 45px 30px 80px;
   }
 
   .semanas-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .semana-card {
+    padding: 23px;
   }
 
   .semana-contenido {
-    gap: 35px;
+    gap: 25px;
+  }
+
+  .columna-teoria {
+    padding-right: 20px;
+  }
+
+  .columna-practica {
+    padding-left: 0;
+  }
+
+  .galeria {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+    gap: 16px;
   }
 }
 
 @media (max-width: 750px) {
   .cuaderno-wrapper {
-    padding: 35px 30px 70px;
+    padding: 35px 24px 65px;
+  }
+
+  .cuaderno-subtitle {
+    margin-bottom: 30px;
   }
 
   .semanas-grid {
     grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .semana-card {
+    padding: 22px;
+    border-radius: 13px;
+  }
+
+  .semana-card:hover {
+    transform: translateY(-3px);
   }
 
   .semana-contenido {
-    grid-template-columns: 1fr;
-    gap: 30px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 25px;
   }
 
   .columna-teoria {
     padding-right: 0;
-    padding-bottom: 30px;
+    padding-bottom: 25px;
     border-right: none;
     border-bottom: 1px solid var(--border);
   }
@@ -257,18 +482,97 @@
   .columna-practica {
     padding-left: 0;
   }
+
+  .columna-teoria h4,
+  .columna-practica h4 {
+    margin-top: 24px;
+  }
+
+  .tabla-conceptos table {
+    min-width: 480px;
+  }
+
+  .galeria {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
 }
 
 @media (max-width: 500px) {
   .cuaderno-wrapper {
-    padding: 30px 20px 60px;
+    padding: 30px 17px 50px;
   }
 
   .cuaderno-title {
     font-size: 2rem;
   }
 
+  .cuaderno-subtitle {
+    font-size: 0.93rem;
+    margin-bottom: 25px;
+  }
+
+  .semana-card {
+    padding: 20px;
+  }
+
+  .semana-card h3 {
+    font-size: 1.15rem;
+  }
+
+  #volver {
+    margin-bottom: 24px;
+    padding: 9px 13px;
+  }
+
   #detalle-titulo {
-    font-size: 1.7rem;
+    font-size: 1.65rem;
+  }
+
+  #detalle-fecha {
+    margin-bottom: 22px;
+  }
+
+  #detalle-contenido {
+    font-size: 0.93rem;
+  }
+
+  .tabla-conceptos th,
+  .tabla-conceptos td {
+    padding: 9px;
+    font-size: 0.85rem;
+  }
+
+  .galeria {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+
+  .galeria img {
+    aspect-ratio: auto;
+  }
+
+  .imagenes-practica {
+    gap: 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .semana-card,
+  .semana-card::before,
+  #volver,
+  .btn-volver-inicio,
+  .imagen-recuadro,
+  .galeria img,
+  .detalle {
+    animation: none;
+    transition: none;
+  }
+
+  .semana-card:hover,
+  #volver:hover,
+  .btn-volver-inicio:hover,
+  .galeria img:hover {
+    transform: none;
   }
 }

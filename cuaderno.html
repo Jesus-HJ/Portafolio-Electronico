@@ -3,6 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Cuaderno digital de Jesus Huaricallo Jaime. Registro semanal de actividades, prácticas, proyectos y aprendizajes del curso."
+    />
+
+    <meta name="theme-color" content="#0f172a" />
+
     <title>Cuaderno · Mi Portafolio Digital</title>
 
     <link rel="stylesheet" href="css/style.css" />
@@ -12,20 +20,21 @@
   <body>
     <header>
       <div class="logo">
-    <h2 class="logo-animation">Jesus Huaricallo Jaime</h2>
-</div>
+        <h2 class="logo-animation">Jesus Huaricallo Jaime</h2>
+      </div>
 
-      <nav>
+      <nav aria-label="Navegación principal">
         <a href="index.html">Inicio</a>
         <a href="index.html#sobre-mi">Sobre mí</a>
         <a href="index.html#proyectos">Proyectos</a>
-        <a href="cuaderno.html">Cuaderno</a>
+        <a href="cuaderno.html" aria-current="page">Cuaderno</a>
       </nav>
 
       <div class="header-right">
         <button
           id="theme-toggle"
           class="theme-toggle"
+          type="button"
           aria-label="Cambiar tema"
           title="Cambiar tema claro/oscuro"
         >
@@ -37,16 +46,20 @@
     <main class="cuaderno-wrapper">
       <h1 class="cuaderno-title">Cuaderno</h1>
 
-      <p class="cuaderno-subtitle">
-        Registro semanal del curso
-      </p>
+      <p class="cuaderno-subtitle">Registro semanal del curso</p>
 
-      <section id="lista-semanas" class="semanas-grid"></section>
+      <section
+        id="lista-semanas"
+        class="semanas-grid"
+        aria-label="Lista de semanas"
+      ></section>
 
-      <section id="detalle-semana" class="detalle oculto">
-        <button id="volver">
-          ← Volver a las semanas
-        </button>
+      <section
+        id="detalle-semana"
+        class="detalle oculto"
+        aria-labelledby="detalle-titulo"
+      >
+        <button id="volver" type="button">← Volver a las semanas</button>
 
         <h2 id="detalle-titulo"></h2>
 
@@ -54,13 +67,17 @@
 
         <div id="detalle-contenido"></div>
 
-        <div id="detalle-imagenes" class="galeria"></div>
+        <div
+          id="detalle-imagenes"
+          class="galeria"
+          aria-label="Galería de imágenes de la semana"
+        ></div>
       </section>
     </main>
 
-    <script src="js/theme.js"></script>
-<script src="js/cuaderno.js"></script>
-<script type="module" src="js/logo-animation.js"></script>
-<script type="module" src="js/semanas-animation.js"></script>
-</body>
+    <script src="js/theme.js" defer></script>
+    <script src="js/cuaderno.js" defer></script>
+    <script type="module" src="js/logo-animation.js"></script>
+    <script type="module" src="js/semanas-animation.js"></script>
+  </body>
 </html>

@@ -234,11 +234,7 @@ nav a:hover::after {
 }
 
 .hero-text h1 span {
-  background: linear-gradient(
-    90deg,
-    var(--accent),
-    var(--accent-2)
-  );
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -337,11 +333,7 @@ nav a:hover::after {
   width: 370px;
   height: 370px;
   border-radius: 50%;
-  background: linear-gradient(
-    135deg,
-    var(--accent),
-    var(--accent-2)
-  );
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
   padding: 7px;
   box-shadow:
     0 25px 60px rgba(0, 0, 0, 0.16),
@@ -439,10 +431,47 @@ nav a:hover::after {
   }
 }
 
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--nav-link);
+  text-decoration: none;
+  transition:
+    color 0.25s ease,
+    transform 0.2s ease;
+}
+
+.social-icons a:hover {
+  color: var(--accent);
+  transform: translateY(-3px);
+}
+
+.social-icons a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 5px;
+  border-radius: 4px;
+}
+
+.social-icons svg {
+  display: block;
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
 @media (max-width: 700px) {
-  header {
-    padding: 16px 20px;
+  .social-icons {
+    gap: 10px;
   }
+
 
   .logo-animation {
     font-size: 1.05rem;

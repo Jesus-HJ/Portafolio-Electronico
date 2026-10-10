@@ -618,79 +618,143 @@ const semanas = [
   id: 5,
   titulo: "Semana 5",
   fecha: "Semana 5",
-  resumen: "Resumen breve de los temas trabajados en la Semana 5.",
+  resumen: "Introducción a React, configuración del entorno y creación de componentes.",
 
   contenido: `
-  <div class="semana-contenido">
+    <div class="semana-contenido">
+      <div class="columna-teoria">
+        <h3>Teoría</h3>
 
-    <div class="columna-teoria">
+        <h4>¿Qué es React?</h4>
+        <p>
+          React es una biblioteca de JavaScript utilizada para crear
+          interfaces de usuario dinámicas e interactivas. Permite
+          desarrollar aplicaciones web mediante componentes reutilizables.
+        </p>
 
-      <h3>Teoría</h3>
+        <h4>¿Para qué sirve React?</h4>
+        <p>
+          Sirve para construir páginas web modernas, actualizar partes
+          de la interfaz sin recargar toda la página y organizar el
+          código en componentes independientes.
+        </p>
 
-      <p>
-        Resumen breve de los temas estudiados durante la Semana 5.
-      </p>
+        <h4>Características principales</h4>
+        <ul>
+          <li>Componentes reutilizables.</li>
+          <li>Uso de JSX para combinar JavaScript y estructura visual.</li>
+          <li>Actualización dinámica de la interfaz.</li>
+          <li>Administración de datos mediante props y state.</li>
+          <li>Integración con herramientas como Vite.</li>
+        </ul>
 
-      <p>
-        Segundo resumen de los principales contenidos desarrollados.
-      </p>
+        <h4>Instalación y ejecución</h4>
+        <p>Instala las dependencias del proyecto:</p>
+        <pre><code>npm install</code></pre>
 
-      <div class="imagenes-practica">
+        <p>Inicia el servidor de desarrollo:</p>
+        <pre><code>npm run dev</code></pre>
 
-        <div class="imagen-recuadro">
-          <img
-            src="img/semana5_1.png"
-            alt="Evidencia de teoría Semana 5 - 1"
-          >
-        </div>
+        <p>
+          Estos comandos deben ejecutarse en la terminal, dentro de
+          la carpeta del proyecto que contiene el archivo package.json.
+        </p>
 
-        <div class="imagen-recuadro">
-          <img
-            src="img/semana5_2.png"
-            alt="Evidencia de teoría Semana 5 - 2"
-          >
-        </div>
+        <h4>Mi primer componente React</h4>
+        <p>
+          Un componente es una función que devuelve los elementos
+          que se mostrarán en la interfaz.
+        </p>
 
+        <pre><code>function App() {
+  return (
+    &lt;h1&gt;Mi primera aplicación React&lt;/h1&gt;
+  );
+}
+
+export default App;</code></pre>
+
+        <h4>Conclusión</h4>
+        <p>
+          React facilita la creación de interfaces organizadas,
+          reutilizables y dinámicas. Su estructura por componentes
+          permite mantener y ampliar las aplicaciones web con mayor facilidad.
+        </p>
       </div>
 
+      <div class="columna-practica">
+        <h3>Prácticas</h3>
+
+        <div class="galeria-practicas">
+          <figure>
+            <img src="img/semana5_1.png" alt="Práctica de React 1">
+            <figcaption>Práctica 1</figcaption>
+          </figure>
+
+          <figure>
+            <img src="img/semana5_2.png" alt="Práctica de React 2">
+            <figcaption>Práctica 2</figcaption>
+          </figure>
+
+          <figure>
+            <img src="img/semana5_3.png" alt="Práctica de React 3">
+            <figcaption>Práctica 3</figcaption>
+          </figure>
+        </div>
+      </div>
     </div>
+  `,
+  imagenes: [],
+},
 
+{
+  id: 6,
+  titulo: "Semana 6",
+  fecha: "Semana 6",
+  resumen: "Contenido pendiente por agregar.",
 
-    <div class="columna-practica">
+  contenido: `
+    <div class="semana-contenido">
+      <div class="columna-teoria">
+        <h3>Teoría</h3>
 
-      <h3>Práctica</h3>
+        <h4>Tema</h4>
+        <p></p>
 
-      <p>
-        Resumen breve de la actividad práctica realizada durante la semana.
-      </p>
+        <h4>Conceptos principales</h4>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
 
-      <p>
-        Descripción breve de las herramientas y técnicas utilizadas.
-      </p>
-
-      <div class="imagenes-practica">
-
-        <div class="imagen-recuadro">
-          <img
-            src="img/semana5_3.png"
-            alt="Evidencia de práctica Semana 5 - 1"
-          >
-        </div>
-
-        <div class="imagen-recuadro">
-          <img
-            src="img/semana5_4.png"
-            alt="Evidencia de práctica Semana 5 - 2"
-          >
-        </div>
-
+        <h4>Conclusión</h4>
+        <p></p>
       </div>
 
+      <div class="columna-practica">
+        <h3>Prácticas</h3>
+        <p></p>
+
+        <div class="galeria-practicas">
+          <figure>
+            <img src="" alt="Evidencia de la práctica 1 de la Semana 6">
+            <figcaption>Práctica 1</figcaption>
+          </figure>
+
+          <figure>
+            <img src="" alt="Evidencia de la práctica 2 de la Semana 6">
+            <figcaption>Práctica 2</figcaption>
+          </figure>
+
+          <figure>
+            <img src="" alt="Evidencia de la práctica 3 de la Semana 6">
+            <figcaption>Práctica 3</figcaption>
+          </figure>
+        </div>
+      </div>
     </div>
-
-  </div>
-`,
-
+  `,
   imagenes: [],
 },
 ]
