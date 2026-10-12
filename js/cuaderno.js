@@ -618,7 +618,7 @@ const semanas = [
   id: 5,
   titulo: "Semana 5",
   fecha: "Semana 5",
-  resumen: "Introducción a React, configuración del entorno y creación de componentes.",
+  resumen: "Desarrollo de una SPA con React, Vite, JSX, props, children y estrategias de estilado.",
 
   contenido: `
     <div class="semana-contenido">
@@ -642,28 +642,31 @@ const semanas = [
         <h4>Características principales</h4>
         <ul>
           <li>Componentes reutilizables.</li>
-          <li>Uso de JSX para combinar JavaScript y estructura visual.</li>
-          <li>Actualización dinámica de la interfaz.</li>
-          <li>Administración de datos mediante props y state.</li>
-          <li>Integración con herramientas como Vite.</li>
+          <li>Uso de JSX para definir interfaces.</li>
+          <li>Actualización dinámica de la interfaz mediante CSR.</li>
+          <li>Transmisión de datos mediante props y composición con children.</li>
+          <li>Estilado mediante CSS Modules, Tailwind CSS o estilos inline.</li>
+          <li>Integración con herramientas modernas como Vite y npm.</li>
         </ul>
 
         <h4>Instalación y ejecución</h4>
-        <p>Instala las dependencias del proyecto:</p>
+        <p>Instalación de las dependencias del proyecto:</p>
         <pre><code>npm install</code></pre>
 
-        <p>Inicia el servidor de desarrollo:</p>
+        <p>Inicio del servidor de desarrollo:</p>
         <pre><code>npm run dev</code></pre>
 
         <p>
-          Estos comandos deben ejecutarse en la terminal, dentro de
-          la carpeta del proyecto que contiene el archivo package.json.
+          Estos comandos se ejecutan en la terminal, dentro de la
+          carpeta del proyecto que contiene el archivo package.json.
+          Vite permite iniciar el entorno de desarrollo y actualizar
+          los cambios mediante HMR.
         </p>
 
         <h4>Mi primer componente React</h4>
         <p>
-          Un componente es una función que devuelve los elementos
-          que se mostrarán en la interfaz.
+          Un componente es una función de JavaScript que devuelve
+          elementos de interfaz mediante JSX.
         </p>
 
         <pre><code>function App() {
@@ -677,29 +680,73 @@ export default App;</code></pre>
         <h4>Conclusión</h4>
         <p>
           React facilita la creación de interfaces organizadas,
-          reutilizables y dinámicas. Su estructura por componentes
-          permite mantener y ampliar las aplicaciones web con mayor facilidad.
+          reutilizables y dinámicas. Su arquitectura basada en
+          componentes permite mantener y ampliar las aplicaciones
+          web con mayor facilidad.
         </p>
       </div>
 
       <div class="columna-practica">
         <h3>Prácticas</h3>
 
-        <div class="galeria-practicas">
-          <figure>
-            <img src="img/semana5_1.png" alt="Práctica de React 1">
-            <figcaption>Práctica 1</figcaption>
-          </figure>
+        <h4>Tecnologías y herramientas utilizadas</h4>
+        <p>
+          <strong>React:</strong> biblioteca de JavaScript utilizada
+          para desarrollar interfaces mediante componentes reutilizables.
+        </p>
 
-          <figure>
-            <img src="img/semana5_2.png" alt="Práctica de React 2">
-            <figcaption>Práctica 2</figcaption>
-          </figure>
+        <p>
+          <strong>Vite:</strong> herramienta de desarrollo que permite
+          crear y ejecutar el proyecto, además de actualizar los cambios
+          rápidamente mediante HMR.
+        </p>
 
-          <figure>
-            <img src="img/semana5_3.png" alt="Práctica de React 3">
-            <figcaption>Práctica 3</figcaption>
-          </figure>
+        <p>
+          <strong>JavaScript y JSX:</strong> permiten implementar la
+          lógica de los componentes y definir la estructura visual de
+          la aplicación.
+        </p>
+
+        <p>
+          <strong>Props y children:</strong> se utilizan para transmitir
+          datos entre componentes y reutilizar estructuras que contienen
+          elementos anidados.
+        </p>
+
+        <p>
+          <strong>CSS Modules:</strong> permiten aplicar estilos
+          específicos a los componentes, reduciendo conflictos entre
+          nombres de clases. También se pueden comparar con Tailwind CSS
+          y los estilos inline.
+        </p>
+
+        <p>
+          <strong>npm y Node.js:</strong> permiten administrar las
+          dependencias y ejecutar los comandos del proyecto.
+        </p>
+
+        <p>
+          <strong>React DevTools y DevTools del navegador:</strong>
+          ayudan a inspeccionar los componentes, revisar las props,
+          analizar el DOM y comprobar el renderizado del lado del cliente
+          (CSR).
+        </p>
+
+        <p>
+          En la práctica se organiza la aplicación en componentes,
+          se separan los estilos y se verifica que React genere
+          dinámicamente la interfaz en el navegador.
+        </p>
+
+        <h4>Evidencias de las prácticas</h4>
+        <div class="imagenes-practica semana5-imagenes">
+          <img src="img/semana5_1.png" alt="Evidencia de la práctica 1 de la Semana 5">
+          <img src="img/semana5_2.png" alt="Evidencia de la práctica 2 de la Semana 5">
+          <img src="img/semana5_3.png" alt="Evidencia de la práctica 3 de la Semana 5">
+          <img src="img/semana5_4.png" alt="Evidencia de la práctica 4 de la Semana 5">
+          <img src="img/semana5_5.png" alt="Evidencia de la práctica 5 de la Semana 5">
+          <img src="img/semana5_6.png" alt="Evidencia de la práctica 6 de la Semana 5">
+          <img src="img/semana5_7.png" alt="Evidencia de la práctica 7 de la Semana 5">
         </div>
       </div>
     </div>
@@ -710,53 +757,136 @@ export default App;</code></pre>
 {
   id: 6,
   titulo: "Semana 6",
-  fecha: "Semana 6",
-  resumen: "Contenido pendiente por agregar.",
-
+  fecha: "07/10/2026",
+  resumen: "Componentes, JSX, TypeScript y estilos en React: desarrollo de interfaces reutilizables, tipado estático y diseño con CSS y Tailwind CSS.",
   contenido: `
     <div class="semana-contenido">
       <div class="columna-teoria">
         <h3>Teoría</h3>
 
-        <h4>Tema</h4>
-        <p></p>
+        <h4>¿Qué son los componentes en React?</h4>
+        <p>
+          Los componentes son unidades reutilizables que permiten dividir
+          una interfaz en partes independientes y organizadas. React los
+          utiliza para construir interfaces dinámicas y actualizar el
+          contenido de manera eficiente cuando cambian los datos.
+        </p>
+
+        <h4>Creación y estructura de componentes</h4>
+        <p>
+          Los componentes pueden crearse como funciones y organizarse
+          en archivos JavaScript o TypeScript. Sus nombres deben comenzar
+          con mayúscula. Para reutilizar su estructura, pueden recibir
+          información mediante props y contenido mediante children.
+        </p>
+
+        <h4>¿Qué es JSX?</h4>
+        <p>
+          JSX es una extensión de sintaxis que permite escribir una
+          estructura similar a HTML dentro de JavaScript. Facilita la
+          creación de interfaces y permite incorporar expresiones,
+          variables y atributos mediante llaves.
+        </p>
 
         <h4>Conceptos principales</h4>
         <ul>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li>Creación de componentes funcionales reutilizables.</li>
+          <li>Uso de JSX para definir la estructura de la interfaz.</li>
+          <li>Transferencia de datos mediante props y children.</li>
+          <li>Uso de TypeScript para definir tipos y detectar errores.</li>
+          <li>Aplicación de estilos mediante CSS y módulos CSS.</li>
+          <li>Uso de Tailwind CSS para diseñar interfaces responsivas.</li>
+          <li>Actualización eficiente de la interfaz mediante React.</li>
         </ul>
 
+        <h4>Tecnologías y herramientas</h4>
+        <p>
+          <strong>React:</strong> biblioteca para desarrollar interfaces
+          mediante componentes reutilizables.
+        </p>
+        <p>
+          <strong>JSX:</strong> permite combinar la estructura visual
+          con expresiones de JavaScript.
+        </p>
+        <p>
+          <strong>TypeScript:</strong> incorpora tipado estático para
+          mejorar la detección de errores y la organización del código.
+        </p>
+        <p>
+          <strong>CSS y Tailwind CSS:</strong> permiten personalizar
+          los estilos, la distribución y la adaptación de la interfaz
+          a diferentes tamaños de pantalla.
+        </p>
+        <p>
+          <strong>Vite y Node.js:</strong> facilitan la configuración,
+          ejecución y administración del entorno de desarrollo.
+        </p>
+
         <h4>Conclusión</h4>
-        <p></p>
+        <p>
+          El estudio de componentes, JSX, TypeScript y estilos permite
+          desarrollar aplicaciones frontend organizadas, reutilizables
+          y fáciles de mantener. Estas herramientas facilitan la
+          construcción de interfaces dinámicas, mejoran la calidad
+          del código y permiten crear diseños adaptables.
+        </p>
+
+        <h4>Evidencias de la teoría</h4>
+        <div class="imagenes-practica semana6-imagenes">
+          <img src="img/semana6_1.png" alt="Evidencia teórica 1 de la Semana 6">
+          <img src="img/semana6_2.png" alt="Evidencia teórica 2 de la Semana 6">
+          <img src="img/semana6_3.png" alt="Evidencia teórica 3 de la Semana 6">
+          <img src="img/semana6_4.png" alt="Evidencia teórica 4 de la Semana 6">
+          <img src="img/semana6_5.png" alt="Evidencia teórica 5 de la Semana 6">
+        </div>
       </div>
 
       <div class="columna-practica">
         <h3>Prácticas</h3>
-        <p></p>
 
-        <div class="galeria-practicas">
-          <figure>
-            <img src="" alt="Evidencia de la práctica 1 de la Semana 6">
-            <figcaption>Práctica 1</figcaption>
-          </figure>
+        <h4>Actividades desarrolladas</h4>
+        <p>
+          <strong>Configuración del proyecto:</strong> preparación del
+          entorno con Vite, instalación de dependencias y organización
+          de las carpetas del proyecto.
+        </p>
+        <p>
+          <strong>Enrutamiento:</strong> creación de páginas y navegación
+          entre vistas sin recargar completamente el navegador.
+        </p>
+        <p>
+          <strong>Consumo de APIs:</strong> obtención de información
+          externa mediante Axios, async/await y manejo de errores.
+        </p>
+        <p>
+          <strong>Renderizado dinámico:</strong> presentación de listas
+          de datos mediante map() y renderizado condicional según
+          el estado de la aplicación.
+        </p>
+        <p>
+          <strong>Formularios controlados:</strong> gestión de campos,
+          eventos y envío de información mediante useState.
+        </p>
+        <p>
+          <strong>Validación:</strong> revisión de las peticiones
+          realizadas y del comportamiento de la interfaz mediante
+          las herramientas de desarrollo del navegador.
+        </p>
 
-          <figure>
-            <img src="" alt="Evidencia de la práctica 2 de la Semana 6">
-            <figcaption>Práctica 2</figcaption>
-          </figure>
-
-          <figure>
-            <img src="" alt="Evidencia de la práctica 3 de la Semana 6">
-            <figcaption>Práctica 3</figcaption>
-          </figure>
+        <h4>Evidencias de las prácticas</h4>
+        <div class="imagenes-practica semana6-imagenes">
+          <img src="img/semana6_6.png" alt="Evidencia de la práctica 1 de la Semana 6">
+          <img src="img/semana6_7.png" alt="Evidencia de la práctica 2 de la Semana 6">
+          <img src="img/semana6_8.png" alt="Evidencia de la práctica 3 de la Semana 6">
+          <img src="img/semana6_9.png" alt="Evidencia de la práctica 4 de la Semana 6">
+          <img src="img/semana6_10.png" alt="Evidencia de la práctica 5 de la Semana 6">
+          <img src="img/semana6_11.png" alt="Evidencia de la práctica 6 de la Semana 6">
         </div>
       </div>
     </div>
   `,
   imagenes: [],
-},
+}
 ]
 
 const grid = document.getElementById("lista-semanas");
