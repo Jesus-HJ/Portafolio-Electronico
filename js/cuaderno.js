@@ -758,77 +758,80 @@ export default App;</code></pre>
   id: 6,
   titulo: "Semana 6",
   fecha: "07/10/2026",
-  resumen: "Componentes, JSX, TypeScript y estilos en React: desarrollo de interfaces reutilizables, tipado estático y diseño con CSS y Tailwind CSS.",
+  resumen: "Componentes, JSX, TypeScript, DOM Virtual, estilos, props y children en React.",
   contenido: `
     <div class="semana-contenido">
       <div class="columna-teoria">
         <h3>Teoría</h3>
 
-        <h4>¿Qué son los componentes en React?</h4>
+        <h4>1. Renderizado y DOM Virtual</h4>
         <p>
-          Los componentes son unidades reutilizables que permiten dividir
-          una interfaz en partes independientes y organizadas. React los
-          utiliza para construir interfaces dinámicas y actualizar el
-          contenido de manera eficiente cuando cambian los datos.
+          React utiliza un DOM Virtual para comparar cambios y actualizar
+          eficientemente los elementos necesarios de la interfaz.
         </p>
 
-        <h4>Creación y estructura de componentes</h4>
+        <h4>2. Componentes</h4>
         <p>
-          Los componentes pueden crearse como funciones y organizarse
-          en archivos JavaScript o TypeScript. Sus nombres deben comenzar
-          con mayúscula. Para reutilizar su estructura, pueden recibir
-          información mediante props y contenido mediante children.
+          Son partes reutilizables de una interfaz. Pueden crearse mediante
+          funciones o clases y sus nombres comienzan con mayúscula.
         </p>
 
-        <h4>¿Qué es JSX?</h4>
+        <h4>3. JSX</h4>
         <p>
-          JSX es una extensión de sintaxis que permite escribir una
-          estructura similar a HTML dentro de JavaScript. Facilita la
-          creación de interfaces y permite incorporar expresiones,
-          variables y atributos mediante llaves.
+          Permite escribir estructuras similares a HTML dentro de JavaScript,
+          utilizando llaves para incorporar expresiones.
+        </p>
+
+        <h4>4. TypeScript</h4>
+        <p>
+          Añade tipado estático a JavaScript para detectar errores y mejorar
+          la organización del código.
+        </p>
+
+        <h4>5. Estilos</h4>
+        <p>
+          React permite aplicar estilos mediante CSS, módulos CSS,
+          estilos en línea y Tailwind CSS.
+        </p>
+
+        <h4>6. Props y Children</h4>
+        <p>
+          Las props transmiten datos entre componentes y children permite
+          incluir contenido dentro de un componente.
         </p>
 
         <h4>Conceptos principales</h4>
         <ul>
-          <li>Creación de componentes funcionales reutilizables.</li>
-          <li>Uso de JSX para definir la estructura de la interfaz.</li>
-          <li>Transferencia de datos mediante props y children.</li>
-          <li>Uso de TypeScript para definir tipos y detectar errores.</li>
-          <li>Aplicación de estilos mediante CSS y módulos CSS.</li>
-          <li>Uso de Tailwind CSS para diseñar interfaces responsivas.</li>
-          <li>Actualización eficiente de la interfaz mediante React.</li>
+          <li>Actualización eficiente con el DOM Virtual.</li>
+          <li>Creación de componentes reutilizables.</li>
+          <li>Uso de JSX para construir interfaces.</li>
+          <li>Tipado estático mediante TypeScript.</li>
+          <li>Diseño con CSS y Tailwind CSS.</li>
+          <li>Transferencia de datos con props y children.</li>
         </ul>
 
         <h4>Tecnologías y herramientas</h4>
         <p>
-          <strong>React:</strong> biblioteca para desarrollar interfaces
-          mediante componentes reutilizables.
+          <strong>React:</strong> biblioteca para crear interfaces.
         </p>
         <p>
-          <strong>JSX:</strong> permite combinar la estructura visual
-          con expresiones de JavaScript.
+          <strong>JSX:</strong> combina JavaScript con una sintaxis similar a HTML.
         </p>
         <p>
-          <strong>TypeScript:</strong> incorpora tipado estático para
-          mejorar la detección de errores y la organización del código.
+          <strong>TypeScript:</strong> permite definir tipos de datos.
         </p>
         <p>
-          <strong>CSS y Tailwind CSS:</strong> permiten personalizar
-          los estilos, la distribución y la adaptación de la interfaz
-          a diferentes tamaños de pantalla.
+          <strong>CSS y Tailwind CSS:</strong> facilitan el diseño visual.
         </p>
         <p>
-          <strong>Vite y Node.js:</strong> facilitan la configuración,
-          ejecución y administración del entorno de desarrollo.
+          <strong>Vite y Node.js:</strong> permiten configurar y ejecutar
+          el entorno de desarrollo.
         </p>
 
         <h4>Conclusión</h4>
         <p>
-          El estudio de componentes, JSX, TypeScript y estilos permite
-          desarrollar aplicaciones frontend organizadas, reutilizables
-          y fáciles de mantener. Estas herramientas facilitan la
-          construcción de interfaces dinámicas, mejoran la calidad
-          del código y permiten crear diseños adaptables.
+          Estos conceptos permiten desarrollar interfaces dinámicas,
+          reutilizables, organizadas y adaptables mediante React.
         </p>
 
         <h4>Evidencias de la teoría</h4>
@@ -846,31 +849,27 @@ export default App;</code></pre>
 
         <h4>Actividades desarrolladas</h4>
         <p>
-          <strong>Configuración del proyecto:</strong> preparación del
-          entorno con Vite, instalación de dependencias y organización
-          de las carpetas del proyecto.
+          <strong>Configuración del proyecto:</strong> preparación del entorno
+          con Vite e instalación de dependencias.
         </p>
         <p>
-          <strong>Enrutamiento:</strong> creación de páginas y navegación
-          entre vistas sin recargar completamente el navegador.
+          <strong>Enrutamiento:</strong> navegación entre páginas de la aplicación.
         </p>
         <p>
-          <strong>Consumo de APIs:</strong> obtención de información
-          externa mediante Axios, async/await y manejo de errores.
+          <strong>Consumo de APIs:</strong> obtención de datos mediante Axios
+          y async/await.
         </p>
         <p>
-          <strong>Renderizado dinámico:</strong> presentación de listas
-          de datos mediante map() y renderizado condicional según
-          el estado de la aplicación.
+          <strong>Renderizado dinámico:</strong> presentación de listas con
+          map() y renderizado condicional.
         </p>
         <p>
-          <strong>Formularios controlados:</strong> gestión de campos,
-          eventos y envío de información mediante useState.
+          <strong>Formularios controlados:</strong> gestión de campos mediante
+          eventos y useState.
         </p>
         <p>
-          <strong>Validación:</strong> revisión de las peticiones
-          realizadas y del comportamiento de la interfaz mediante
-          las herramientas de desarrollo del navegador.
+          <strong>Validación:</strong> comprobación de peticiones y funcionamiento
+          de la interfaz en el navegador.
         </p>
 
         <h4>Evidencias de las prácticas</h4>
