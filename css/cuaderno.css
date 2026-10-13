@@ -585,3 +585,4 @@
     transform: none;
   }
 }
+body:not(.light-mode) .semana-card{background:linear-gradient(145deg,rgba(17,36,58,.96),rgba(10,27,45,.96));border-color:rgba(164,190,220,.3);box-shadow:0 12px 30px rgba(0,0,0,.2)}body:not(.light-mode) .semana-card:hover{border-color:var(--accent);box-shadow:0 16px 34px rgba(0,0,0,.32)}
