@@ -13,6 +13,14 @@ const semanas = [
 
           <h3>Teoría</h3>
 
+          <h4>Temas aprendidos con mis propias palabras</h4>
+          <p>
+            Aprendí que una aplicación web funciona gracias a la comunicación
+            entre el navegador, los servidores y diferentes tecnologías. También
+            comprendí la diferencia entre frontend, backend y fullstack, así como
+            la función de HTML, CSS, JavaScript, DNS, TCP/IP y HTTP.
+          </p>
+
           <h4>Exposición de sílabo y prueba de diagnóstico</h4>
 
           <p>
@@ -107,6 +115,14 @@ const semanas = [
             realizadas durante la Semana 1.
           </p>
 
+          <h4>Ejercicios de laboratorio - Resultados</h4>
+          <p>
+            Reconocí los conceptos básicos de la Web y relacioné cada tecnología
+            con su función. Como resultado, pude identificar el recorrido de una
+            solicitud desde el navegador hasta el servidor y distinguir los roles
+            que participan en un proyecto web.
+          </p>
+
           <div class="imagenes-practica">
 
             <div class="imagen-recuadro">
@@ -139,6 +155,16 @@ const semanas = [
 
           </div>
 
+        <div class="reflexion">
+          <h4>Reflexión</h4>
+          <p>
+            <strong>¿Qué aprendí?</strong> Aprendí los fundamentos del desarrollo
+            web y la importancia de cada tecnología. <strong>¿Cómo aprendí?</strong>
+            Aprendí mediante la explicación de los temas, la prueba de diagnóstico
+            y el análisis de ejemplos.
+          </p>
+        </div>
+
         </div>
 
       </div>
@@ -160,6 +186,14 @@ const semanas = [
       <div class="columna-teoria">
 
         <h3>Teoría</h3>
+
+        <h4>Temas aprendidos con mis propias palabras</h4>
+        <p>
+          Aprendí a estructurar una página con HTML5 y a organizar sus elementos
+          mediante el DOM. También comprendí que CSS3 define la apariencia y que
+          Flexbox, Grid, position y las unidades relativas ayudan a crear diseños
+          fluidos y responsivos.
+        </p>
 
         <h4>HTML y XML</h4>
 
@@ -280,6 +314,13 @@ const semanas = [
           la Semana 2.
         </p>
 
+        <h4>Ejercicios de laboratorio - Resultados</h4>
+        <p>
+          Construí una página aplicando Flexbox, unidades relativas y reglas de
+          diseño responsivo. El resultado fue una interfaz ordenada que se adapta
+          a distintos tamaños de pantalla y mantiene una estructura semántica.
+        </p>
+
         <div class="imagenes-practica">
 
           <div class="imagen-recuadro">
@@ -308,9 +349,18 @@ const semanas = [
               src="img/semana2_9.png"
               alt="Evidencia de práctica 4 Semana 2"
             >
-          </div>
+            </div>
 
         </div>
+
+      <div class="reflexion">
+        <h4>Reflexión</h4>
+        <p>
+          <strong>¿Qué aprendí?</strong> Aprendí a combinar estructura, estilos y
+          adaptabilidad. <strong>¿Cómo aprendí?</strong> Aprendí practicando con
+          ejemplos, modificando el código y observando los cambios en el navegador.
+        </p>
+      </div>
 
       </div>
 
@@ -332,6 +382,14 @@ const semanas = [
       <div class="columna-teoria">
 
         <h3>Teoría</h3>
+
+        <h4>Temas aprendidos con mis propias palabras</h4>
+        <p>
+          Aprendí que Bootstrap y Tailwind CSS ofrecen clases y componentes que
+          agilizan el desarrollo visual. Entendí cómo usar layouts, Flexbox,
+          tipografías, espaciados, botones, formularios y navegación para crear
+          interfaces consistentes.
+        </p>
 
         <p>
           Desarrollo de páginas web Front-End utilizando Bootstrap y Tailwind CSS.
@@ -382,6 +440,13 @@ const semanas = [
 
         <h3>Práctica</h3>
 
+        <h4>Ejercicios de laboratorio - Resultados</h4>
+        <p>
+          Desarrollé páginas utilizando Bootstrap y Tailwind CSS, aplicando
+          distribución, componentes y estilos utilitarios. Como resultado obtuve
+          interfaces funcionales y visualmente organizadas.
+        </p>
+
         <p>
           Desarrollo de páginas web utilizando Bootstrap y Tailwind CSS.
         </p>
@@ -422,9 +487,19 @@ const semanas = [
               src="img/semana3_7.png"
               alt="Evidencia de práctica Semana 3 - 4"
             >
-          </div>
+            </div>
 
         </div>
+
+      <div class="reflexion">
+        <h4>Reflexión</h4>
+        <p>
+          <strong>¿Qué aprendí?</strong> Aprendí a reutilizar estilos y
+          componentes para trabajar con mayor rapidez. <strong>¿Cómo aprendí?</strong>
+          Aprendí comparando ambas herramientas y aplicándolas en una práctica
+          calificada.
+        </p>
+      </div>
 
       </div>
 
@@ -447,6 +522,14 @@ const semanas = [
     <div class="columna-teoria">
 
       <h3>Teoría</h3>
+
+      <h4>Temas aprendidos con mis propias palabras</h4>
+      <p>
+        Aprendí que JavaScript agrega comportamiento a una página y que las
+        funciones, closures y estructuras de control permiten organizar la lógica.
+        También comprendí que el DOM conecta el código con el HTML y que Canvas
+        junto con requestAnimationFrame permite crear animaciones.
+      </p>
 
       <p>
         Desarrollo Front-End con JavaScript y TypeScript, trabajando variables,
@@ -516,6 +599,13 @@ const semanas = [
     <div class="columna-practica">
 
       <h3>Práctica</h3>
+
+      <h4>Ejercicios de laboratorio - Resultados</h4>
+      <p>
+        Implementé una aplicación con manipulación del DOM, funciones avanzadas,
+        Canvas y animaciones. El resultado fue una interfaz dinámica que pude
+        revisar y mejorar usando DevTools.
+      </p>
 
       <p>
         Se desarrolló una aplicación web con JavaScript/TypeScript,
@@ -606,6 +696,16 @@ const semanas = [
 
       </div>
 
+    <div class="reflexion">
+      <h4>Reflexión</h4>
+      <p>
+        <strong>¿Qué aprendí?</strong> Aprendí a controlar el comportamiento y
+        las animaciones de una interfaz. <strong>¿Cómo aprendí?</strong> Aprendí
+        escribiendo funciones, probando resultados y depurando errores en el
+        navegador.
+      </p>
+    </div>
+
     </div>
 
   </div>
@@ -624,6 +724,13 @@ const semanas = [
     <div class="semana-contenido">
       <div class="columna-teoria">
         <h3>Teoría</h3>
+
+        <h4>Temas aprendidos con mis propias palabras</h4>
+        <p>
+          Aprendí que React permite construir interfaces con componentes
+          reutilizables y JSX. Comprendí la utilidad de Vite, npm, props,
+          children y las diferentes formas de aplicar estilos en una SPA.
+        </p>
 
         <h4>¿Qué es React?</h4>
         <p>
@@ -689,6 +796,13 @@ export default App;</code></pre>
       <div class="columna-practica">
         <h3>Prácticas</h3>
 
+        <h4>Ejercicios de laboratorio - Resultados</h4>
+        <p>
+          Configuré una aplicación React con Vite, organicé sus componentes y
+          apliqué estilos. El resultado fue una interfaz que se actualiza en el
+          navegador sin recargar toda la página y que puede ampliarse con facilidad.
+        </p>
+
         <h4>Tecnologías y herramientas utilizadas</h4>
         <p>
           <strong>React:</strong> biblioteca de JavaScript utilizada
@@ -748,6 +862,15 @@ export default App;</code></pre>
           <img src="img/semana5_6.png" alt="Evidencia de la práctica 6 de la Semana 5">
           <img src="img/semana5_7.png" alt="Evidencia de la práctica 7 de la Semana 5">
         </div>
+      <div class="reflexion">
+        <h4>Reflexión</h4>
+        <p>
+          <strong>¿Qué aprendí?</strong> Aprendí la estructura básica de una SPA
+          y el valor de reutilizar componentes. <strong>¿Cómo aprendí?</strong>
+          Aprendí instalando dependencias, ejecutando el proyecto y observando
+          cómo los cambios se reflejaban con HMR.
+        </p>
+      </div>
       </div>
     </div>
   `,
@@ -763,6 +886,13 @@ export default App;</code></pre>
     <div class="semana-contenido">
       <div class="columna-teoria">
         <h3>Teoría</h3>
+
+        <h4>Temas aprendidos con mis propias palabras</h4>
+        <p>
+          Aprendí que el DOM Virtual ayuda a React a actualizar solo lo necesario.
+          También comprendí cómo JSX, TypeScript, los estilos, props y children
+          se combinan para crear componentes claros, seguros y reutilizables.
+        </p>
 
         <h4>1. Renderizado y DOM Virtual</h4>
         <p>
@@ -847,6 +977,13 @@ export default App;</code></pre>
       <div class="columna-practica">
         <h3>Prácticas</h3>
 
+        <h4>Ejercicios de laboratorio - Resultados</h4>
+        <p>
+          Configuré un proyecto con Vite, implementé rutas, consumí datos de una
+          API, rendericé listas y validé formularios controlados. Como resultado
+          obtuve una aplicación dinámica y comprobé su funcionamiento en el navegador.
+        </p>
+
         <h4>Actividades desarrolladas</h4>
         <p>
           <strong>Configuración del proyecto:</strong> preparación del entorno
@@ -881,6 +1018,15 @@ export default App;</code></pre>
           <img src="img/semana6_10.png" alt="Evidencia de la práctica 5 de la Semana 6">
           <img src="img/semana6_11.png" alt="Evidencia de la práctica 6 de la Semana 6">
         </div>
+      <div class="reflexion">
+        <h4>Reflexión</h4>
+        <p>
+          <strong>¿Qué aprendí?</strong> Aprendí a integrar varios conceptos de
+          React en una aplicación organizada. <strong>¿Cómo aprendí?</strong>
+          Aprendí mediante la práctica, la revisión de errores y la comprobación
+          de cada funcionalidad paso a paso.
+        </p>
+      </div>
       </div>
     </div>
   `,
