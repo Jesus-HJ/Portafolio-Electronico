@@ -3,127 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Mi Portafolio Digital</title>
-
+    <meta name="description" content="Portafolio digital de Jesus Huaricallo Jaime, estudiante de Ingeniería de Sistemas y desarrollador Front-End." />
+    <meta name="theme-color" content="#07111f" />
+    <title>Jesus Huaricallo Jaime · Portafolio</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
-
-  <body>
+  <body class="home-page">
     <header>
-      <div class="logo">
-        <h2 class="logo-animation">Jesus Huaricallo Jaime</h2>
-      </div>
-
-      <nav aria-label="Navegación principal">
-        <a href="index.html">Inicio</a>
-        <a href="#sobre-mi">Sobre mí</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="cuaderno.html">Cuaderno</a>
-      </nav>
-
-      <div class="header-right">
-        <div class="social-icons">
-          <a
-            href="https://github.com/Jesus-HJ"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Visitar mi perfil de GitHub"
-            title="GitHub"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 16 16"
-              aria-hidden="true"
-              focusable="false"
-            >
-              <path
-                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
-        0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13
-        -.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66
-        .07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95
-        0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12
-        0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27
-        .68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82
-        .44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15
-        0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48
-        0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01
-        8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"
-              />
-            </svg>
-          </a>
-
-          <a
-            href="https://www.linkedin.com/in/jesus-huaricallo-jaime-1378a4303/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Visitar mi perfil de LinkedIn"
-            title="LinkedIn"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-              focusable="false"
-            >
-              <path
-                d="M20.45 20.45h-3.56v-5.58c0-1.33-.03-3.04-1.85-3.04
-        -1.85 0-2.14 1.45-2.14 2.94v5.68H9.34V9h3.42v1.56h.05
-        c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28z
-        M5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14z
-        M7.12 20.45H3.56V9h3.56v11.45z"
-              />
-            </svg>
-          </a>
-        </div>
-
-        <button
-          id="theme-toggle"
-          class="theme-toggle"
-          type="button"
-          aria-label="Cambiar tema"
-          title="Cambiar tema claro/oscuro"
-        >
-          🌙
-        </button>
-      </div>
+      <a class="logo" href="#inicio" aria-label="Ir al inicio"><span class="logo-mark">JH</span><h2 class="logo-animation">Jesus Huaricallo Jaime</h2></a>
+      <nav aria-label="Navegación principal"><a href="#inicio">Inicio</a><a href="sobre-mi.html">Sobre mí</a><a href="proyectos.html">Proyectos</a><a href="cuaderno.html">Cuaderno</a></nav>
+      <div class="header-right"><div class="social-icons"><a href="https://github.com/Jesus-HJ" target="_blank" rel="noopener noreferrer" aria-label="Visitar mi perfil de GitHub" title="GitHub"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z" /></svg></a><a href="https://www.linkedin.com/in/jesus-huaricallo-jaime-1378a4303/" target="_blank" rel="noopener noreferrer" aria-label="Visitar mi perfil de LinkedIn" title="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.58c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.68H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45z" /></svg></a></div><button id="theme-toggle" class="theme-toggle" type="button" aria-label="Cambiar tema" title="Cambiar tema claro/oscuro">🌙</button></div>
     </header>
-
     <main>
-      <section class="hero">
-        <div class="hero-text">
-          <span class="tag"> Ingeniería de Sistemas · UNCP </span>
-
-          <h1>Mi portafolio digital</h1>
-
-          <p>
-            Transformo ideas en soluciones tecnológicas. Me apasiona aprender de
-            cada reto y desarrollar proyectos que generen valor real, creyendo
-            que la tecnología puede ser un puente para mejorar la vida de las
-            personas.
-          </p>
-
-          <div class="btn-group">
-            <a href="#proyectos" class="btn-primary"> Ver proyectos </a>
-            <a href="#contacto" class="btn-secondary"> Contactarme </a>
-          </div>
-        </div>
-
-        <div class="hero-visual">
-          <div class="avatar-frame">
-            <img
-              src="img/Imagen1.jpg"
-              alt="Foto de perfil"
-              width="400"
-              height="400"
-              fetchpriority="high"
-              decoding="async"
-            />
-          </div>
-        </div>
-      </section>
-
-    <script src="js/theme.js" defer></script>
-    <script type="module" src="js/logo-animation.js"></script>
+      <section class="hero" id="inicio"><div class="hero-text"><span class="eyebrow"><span class="eyebrow-dot"></span> Ingeniería de Sistemas · UNCP</span><h1>Diseño experiencias digitales <span>con propósito.</span></h1><p>Construyo interfaces modernas y soluciones tecnológicas que convierten ideas en productos útiles, claros y preparados para crecer.</p><div class="btn-group"><a href="#proyectos" class="btn-primary">Ver proyectos <span>↗</span></a></div><div class="hero-meta"><span>● Disponible para colaborar</span><span>·</span><span>Huancayo, Perú</span></div></div><div class="hero-visual" aria-label="Retrato de Jesus Huaricallo Jaime"><div class="visual-orbit orbit-one"></div><div class="visual-orbit orbit-two"></div><div class="avatar-frame"><img src="img/hero-portrait.png" alt="Retrato profesional de Jesus Huaricallo Jaime" width="716" height="716" fetchpriority="high" decoding="async" /></div><div class="floating-card card-bottom"><span class="mini-icon">⌘</span><div><strong>Front-End</strong><small>React · JS · CSS</small></div></div></div></section>
+      <section class="section about" id="sobre-mi"><div class="section-heading"><span class="section-kicker">01 · SOBRE MÍ</span><h2>Una mente curiosa,<br /><span>una mirada tecnológica.</span></h2></div><div class="about-grid"><div class="about-copy"><p class="lead">Soy estudiante de Ingeniería de Sistemas en la Universidad Nacional del Centro del Perú. Me interesa entender cómo funciona la tecnología y convertir ese conocimiento en experiencias digitales que resuelvan problemas reales.</p><p>Durante mi formación he explorado el desarrollo Front-End, la creación de interfaces responsivas, JavaScript, TypeScript y React. Aprendo construyendo: cada práctica es una oportunidad para mejorar mi lógica, mi criterio visual y mi forma de trabajar.</p></div><div class="about-panel"><div class="panel-label">MI ENFOQUE</div><div class="principle"><span>01</span><strong>Aprender haciendo</strong><p>La práctica constante convierte los conceptos en habilidades reales.</p></div><div class="principle"><span>02</span><strong>Diseñar con intención</strong><p>Cada decisión visual debe ayudar a que la experiencia sea más clara.</p></div><div class="principle"><span>03</span><strong>Construir para crecer</strong><p>Orden, componentes reutilizables y código fácil de mantener.</p></div></div></div><div class="skills-row"><span>HTML · CSS</span><span>JavaScript</span><span>TypeScript</span><span>React</span><span>Vite</span><span>Git & GitHub</span></div></section>
+      <section class="section projects" id="proyectos"><div class="section-heading projects-heading"><div><span class="section-kicker">02 · PROYECTOS</span><h2>Aprendizaje que se<br /><span>convierte en producto.</span></h2></div></div><div class="project-grid"><article class="project-card project-featured"><div class="project-number">01</div><div class="project-content"><span class="project-type">DESARROLLO WEB</span><h3>Interfaces responsivas</h3><p>Construcción de páginas adaptables con HTML semántico, CSS moderno, Flexbox, Grid y componentes visuales.</p><div class="tech-list"><span>HTML</span><span>CSS</span><span>Bootstrap</span><span>Tailwind</span></div></div><a href="cuaderno.html" class="project-arrow" aria-label="Ver proyecto de interfaces responsivas">↗</a></article><article class="project-card"><div class="project-number">02</div><div class="project-content"><span class="project-type">JAVASCRIPT · CANVAS</span><h3>Interacción y animación</h3><p>Experimentos con DOM, Canvas API, closures y requestAnimationFrame para crear experiencias dinámicas.</p><div class="tech-list"><span>JavaScript</span><span>TypeScript</span><span>Canvas</span></div></div><a href="cuaderno.html" class="project-arrow" aria-label="Ver proyecto de interacción y animación">↗</a></article><article class="project-card"><div class="project-number">03</div><div class="project-content"><span class="project-type">REACT · VITE</span><h3>Componentes reutilizables</h3><p>Desarrollo de una SPA organizada con JSX, props, children, estilos separados y renderizado dinámico.</p><div class="tech-list"><span>React</span><span>Vite</span><span>JSX</span></div></div><a href="cuaderno.html" class="project-arrow" aria-label="Ver proyecto de React y Vite">↗</a></article><article class="project-card"><div class="project-number">04</div><div class="project-content"><span class="project-type">APLICACIONES WEB</span><h3>Datos y formularios</h3><p>Práctica de consumo de APIs, navegación, formularios controlados, validación y renderizado condicional.</p><div class="tech-list"><span>Axios</span><span>Async/Await</span><span>React</span></div></div><a href="cuaderno.html" class="project-arrow" aria-label="Ver proyecto de datos y formularios">↗</a></article></div></section>
+      <section class="section contact" id="contacto"><div class="contact-box"><div><span class="section-kicker">03 · CONTACTO</span><h2>¿Tienes una idea?<br /><span>Hagámosla realidad.</span></h2><p>Estoy disponible para conversar sobre proyectos, prácticas y oportunidades de colaboración.</p></div><div class="contact-actions"><a class="whatsapp-link" href="https://wa.me/51926732860?text=Hola%20Jesus%2C%20vi%20tu%20portafolio" target="_blank" rel="noopener noreferrer"><span class="whatsapp-icon">◔</span><span><small>ESCRÍBEME POR WHATSAPP</small><strong>+51 926 732 860</strong></span><span>↗</span></a><a class="email-link" href="mailto:jesus.huaricallo.jaime@gmail.com"><span class="email-icon">@</span><span><small>ESCRÍBEME POR CORREO</small><strong>jesus.huaricallo.jaime@gmail.com</strong></span><span>↗</span></a></div></div></section>
+    </main>
+    <footer><span>© 2026 Jesus Huaricallo Jaime</span><a href="#inicio">Volver arriba ↑</a></footer>
+    <script src="js/theme.js" defer></script><script src="js/page-links.js" defer></script><script type="module" src="js/logo-animation.js"></script>
   </body>
 </html>
