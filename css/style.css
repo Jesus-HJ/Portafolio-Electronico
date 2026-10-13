@@ -20,3 +20,4 @@ nav{gap:2px;padding:4px;border-color:rgba(164,190,220,.12);background:rgba(7,17,
 nav{padding:0;border:none;background:transparent;backdrop-filter:none;box-shadow:none}
 nav{gap:12px}
 .hero h1 span,.about-case-study h1 span{background:none;color:inherit;-webkit-text-fill-color:currentColor}
+.contact-box h2,.contact-box h2 span{background:none;color:#000;-webkit-text-fill-color:#000}
